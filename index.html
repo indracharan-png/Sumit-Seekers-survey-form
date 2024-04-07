@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Summit Seekers Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font-link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="logo-div">
+      <img src="pics/DVS_logo.png" alt="company-logo">
+    </div>
+    <header>
+      <h1 id="title">Summit Seekers Survey Form</h1>
+      <p id="description">Thank you for taking time to help us improve our business</p>
+    </header>
+    <div id="form-container">
+      <form action="" id="form-id">
+        <div class="form-ele">
+          <label for="name" id="name-label" class="form-ele-question">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-input"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-ele">
+          <label for="email-id" id="email-label" class="form-ele-question">Email</label>
+          <input
+            type="email"
+            id="email-id"
+            class="form-input"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-ele">
+          <label for="age" id="age-label" class="form-ele-question">Age</label>
+          <input type="number" id="age" name="age" class="form-input" min="10" max="99" placeholder="Enter your age"/>
+        </div>
+        <div class="form-ele">
+          <label for="trail-options" id="trail-options-label"
+          class="form-ele-question">Kindly select the trail/trek you experienced</label
+          >
+          <select name="path-taken" id="path-options-select" class="form-input">
+            <option value="place-holder" selected>select trail/trek</option>
+            <option value="whispering-pines-trail">
+              Whispering Pines Trail
+            </option>
+            <option value="mystic-mountain-expedition">
+              Mystic Mountain Expedition
+            </option>
+            <option value="sunbeam-summit-trek">Sunbeam Summit Trek</option>
+            <option value="emerald-valley-exploration">
+              Emerald Valley Exploration
+            </option>
+          </select>
+        </div>
+        <div class="form-ele">
+          <label for="will-you-recommend" class="form-ele-question">Would you recommend SumitSeekers to a friend?</label>
+          <div class="recommendation-options" id="definitely-div">
+            <input
+              type="radio"
+              name="recommendation-level"
+              value="definitely"
+              id="definitely"
+              checked
+            />
+            <label for="definitely" id="definitely-label"> &nbsp;Definitely</label>
+          </div>
+          <div class="recommendation-options" id="maybe-div">
+            <input
+              type="radio"
+              name="recommendation-level"
+              value="maybe"
+              id="maybe"
+            />
+            <label for="maybe" id="maybe-label"> &nbsp;Maybe</label>
+          </div>
+          <div class="recommendation-options" id="not_sure-div">
+            <input
+              type="radio"
+              name="recommendation-level"
+              value="not-sure"
+              id="not-sure"
+            />
+            <label for="not-sure" id="not-sure-label"> &nbsp;Not sure</label>
+          </div>
+        </div>
+        <div class="form-ele">
+          <label for="favourite-thing" class="form-ele-question"
+            >What's the one thing that truly captivates you about Summit
+            Seekers?</label
+          >
+          <select
+            name="favourite-thing-about-summitseekers"
+            id="favourite-thing"
+          >
+            <option value="select-your-choice" selected>
+              select your choice
+            </option>
+            <option value="stunning-scenery">Stunning Scenery</option>
+            <option value="experienced-guides">Experienced Guides</option>
+            <option value="adventure-opportunities">
+              Adventure Opportunities
+            </option>
+            <option value="sustainable-practices">Sustainable Practices</option>
+            <option value="accommodation-comfort">Accommodation Comfort</option>
+            <option value="community-engagement">Community Engagement</option>
+            <option value="safety-measures">Safety Measures</option>
+          </select>
+        </div>
+        <div class="form-ele">
+          <label for="to_be_improved" class="form-ele-question">
+            What would you like to see improved at summit seekers?</label>
+            <div class="improvement-options" id="dining_choices-div">
+              <input type="checkbox" id="expand_dining_choices" value="expand_dining_choices"/>
+              <label for="expand_dining_choices"> &nbsp;Expand dining choices</label>
+            </div>
+            <div class="improvement-options" id="expand_communications-div">
+              <input type="checkbox" id="expand_communications" value="expand_communications"/>
+              <label for="expand_communications"> &nbsp;Expand communications</label>
+            </div>
+            <div class="improvement-options" id="advanced_booking-system-div">
+              <input type="checkbox" id="advanced_booking-system" value="advanced_booking-system"/>
+              <label for="advanced_booking-system">
+                &nbsp;Advanced Booking System</label
+              >
+            </div>
+            <div class="improvement-options" id="streamlined_itineraries-div">
+              <input type="checkbox" id="streamlined_itineraries" value="streamlined_itineraries"/>
+              <label for="streamlined_itineraries">
+                &nbsp;Streamlined Itineraries</label
+              >
+            </div>
+          </label>
+        </div>
+        <div class="form-ele">
+          <label for="comments_or_suggestions"
+          class="form-ele-question">Any comments or suggestions?</label
+          >
+          <textarea
+            name="comments"
+            id="comments_or_suggestions"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+        <div class="form-ele" id="button-div">
+          <input type="submit" id="submit-btn"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
