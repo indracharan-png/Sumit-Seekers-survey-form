@@ -1,5 +1,5 @@
 # Sumit-Seekers-survey-form
-This is a project aimed to build a survey form for a summit seekers trekking company.
+This project is a survey form for users who have used summit seekers trekking company in their trekking journey.
 
-NOTE: Don't forget to download the provided images and put 'em in a new "pics" folder if you ever wanna run this code locally.
+
 
